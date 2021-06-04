@@ -3,8 +3,6 @@ let tabBtnStyleColor = Array.from(
 );
 
 let resultDiv = document.querySelector("#result_effect");
-let tabBorder = ["solid", "skinny", "dotted"];
-let tabBorderTop = [];
 
 let functStyleColor = (nodeClass) => {
   resultDiv.classList.toggle(nodeClass.classList[0]);
