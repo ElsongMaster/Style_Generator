@@ -3,44 +3,44 @@ h1 {
   width: 80%;
 }
 
-#bg-gray {
+.bg-gray {
   background-color: gray;
 }
 
-#bg-red {
+.bg-red {
   background-color: red;
 }
 
-#bg-green {
+.bg-green {
   background-color: green;
 }
 
-#bg-blue {
+.bg-blue {
   background-color: blue;
 }
 
-#solid {
-  border: 2px solid black;
+.solid {
+  border: 2px solid black !important;
 }
 
-#dotted {
-  border: 2px dotted black;
+.dotted {
+  border: 2px dotted black !important;
 }
 
-#skinny {
-  border: 1px solid black;
+.skinny {
+  border: 1px solid black !important;
 }
 
-#border_top_skinny {
-  border-top: 1px solid red;
+.border_top_skinny {
+  border-top: 1px solid red !important;
 }
 
-#border_top_normal {
-  border-top: 3px solid red;
+.border_top_normal {
+  border-top: 3px solid red !important;
 }
 
-#border_top_bold {
-  border-top: 5px solid red;
+.border_top_bold {
+  border-top: 5px solid red !important;
 }
 
 .colorStyle {
