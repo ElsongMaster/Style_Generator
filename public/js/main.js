@@ -3,14 +3,15 @@ let tabBtnStyleColor = Array.from(
 );
 
 let resultDiv = document.querySelector("#result_effect");
+let tabBorder = ["solid", "skinny", "dotted"];
+let tabBorderTop = [];
 
 let functStyleColor = (nodeClass) => {
-  console.log(nodeClass.classList[0]);
-  resultDiv.className = nodeClass.classList[0];
+  resultDiv.classList.toggle(nodeClass.classList[0]);
 };
+
 let divStyleColor = document.querySelector(".colorStyle");
 divStyleColor.addEventListener("click", (e) => {
-  console.log(e.target);
   if (tabBtnStyleColor.includes(e.target)) {
     functStyleColor(e.target);
   }
