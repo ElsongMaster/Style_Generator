@@ -73,3 +73,34 @@ button {
   margin-right: 5px;
   border: none;
 }
+
+.styleBorder {
+  margin: 50px 0;
+}
+input:not(input:first-of-type) {
+  width: 30px;
+  height: 30px;
+  outline: none;
+}
+input:first-of-type {
+  width: 150px;
+}
+.bd-allSides {
+  border: 2px solid black;
+}
+
+.bd-top {
+  border-top: 2px solid black;
+}
+
+.bd-right {
+  border-right: 2px solid black;
+}
+
+.bd-bottom {
+  border-bottom: 2px solid black;
+}
+
+.bd-left {
+  border-left: 2px solid black;
+}
