@@ -1,3 +1,4 @@
+//partie bg-color
 let tabBtnStyleColor = Array.from(
   document.querySelector(".colorStyle").children
 );
@@ -15,6 +16,7 @@ divStyleColor.addEventListener("click", (e) => {
   }
 });
 
+//partie border
 let divStyleBorder = document.querySelector(".styleBorder");
 let tabStyleBorder = Array.from(divStyleBorder.children);
 let functBorderStyle = (node) => {
@@ -39,5 +41,30 @@ let functBorderStyle = (node) => {
 divStyleBorder.addEventListener("click", (e) => {
   if (tabStyleBorder.includes(e.target)) {
     functBorderStyle(e.target);
+  }
+});
+
+//Partie border radius
+
+let divStyleBorderRadius = document.querySelector(".styleBorderRadius");
+let tabStyleBorderRadius = Array.from(divStyleBorderRadius.children);
+console.log(tabStyleBorderRadius);
+let functBorderStyleRadius = (node) => {
+  if (node == tabStyleBorderRadius[0]) {
+    resultDiv.style.borderRadius = `${node.value}px`;
+  } else if (node == tabStyleBorderRadius[1]) {
+    resultDiv.style.borderRadius = `${node.value}px 0 0 0`;
+  } else if (node == tabStyleBorderRadius[2]) {
+    resultDiv.style.borderRadius = `0 ${node.value}px 0 0 `;
+  } else if (node == tabStyleBorderRadius[3]) {
+    resultDiv.style.borderRadius = `0 0 ${node.value}px 0 `;
+  } else if (node == tabStyleBorderRadius[4]) {
+    resultDiv.style.borderRadius = `0 0 0${node.value}px `;
+  }
+};
+
+divStyleBorderRadius.addEventListener("click", (e) => {
+  if (tabStyleBorderRadius.includes(e.target)) {
+    functBorderStyleRadius(e.target);
   }
 });

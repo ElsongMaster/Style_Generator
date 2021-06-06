@@ -74,10 +74,11 @@ button {
   border: none;
 }
 
-.styleBorder {
+.styleBorder,
+.styleBorderRadius {
   margin: 50px 0;
 }
-input:not(input:first-of-type) {
+input:not(.styleBorder input:first-of-type) {
   width: 30px;
   height: 30px;
   outline: none;
@@ -103,4 +104,24 @@ input:first-of-type {
 
 .bd-left {
   border-left: 2px solid black;
+}
+
+.bdRadius-allSides {
+  border-radius: 5px;
+}
+
+.bdRadius-topLeft {
+  border-radius: 5px 0 0 0;
+}
+
+.bdRadius-topRight {
+  border-radius: 0 5px 0 0;
+}
+
+.bdRadius-bottomLeft {
+  border-radius: 0 0 5px 0;
+}
+
+.bdRadius-bottomRight {
+  border-radius: 0 0 0 5px;
 }
