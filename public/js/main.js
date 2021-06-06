@@ -21,8 +21,7 @@ let divStyleBorder = document.querySelector(".styleBorder");
 let tabStyleBorder = Array.from(divStyleBorder.children);
 let functBorderStyle = (node) => {
   if (node == tabStyleBorder[0]) {
-    console.log(resultDiv.style.backgroundColor);
-    node.addEventListener("focusout", () => {
+    node.addEventListener("input", () => {
       resultDiv.style.backgroundColor = `${node.value}`;
     });
   } else if (node == tabStyleBorder[1]) {
@@ -48,7 +47,6 @@ divStyleBorder.addEventListener("click", (e) => {
 
 let divStyleBorderRadius = document.querySelector(".styleBorderRadius");
 let tabStyleBorderRadius = Array.from(divStyleBorderRadius.children);
-console.log(tabStyleBorderRadius);
 let functBorderStyleRadius = (node) => {
   if (node == tabStyleBorderRadius[0]) {
     resultDiv.style.borderRadius = `${node.value}px`;
