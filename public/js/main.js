@@ -57,7 +57,7 @@ let functBorderStyleRadius = (node) => {
   } else if (node == tabStyleBorderRadius[3]) {
     resultDiv.style.borderRadius = `0 0 ${node.value}px 0 `;
   } else if (node == tabStyleBorderRadius[4]) {
-    resultDiv.style.borderRadius = `0 0 0${node.value}px `;
+    resultDiv.style.borderRadius = `0 0 0 ${node.value}px `;
   }
 };
 
